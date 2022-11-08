@@ -13,8 +13,10 @@ export class HomePage {
 
   myImage = null;
   position: Position = null;
+  plt: any;
 
-  constructor() {}
+  constructor() {
+  }
 
   async takePicture() {
     const image = await Camera.getPhoto({
